@@ -1,0 +1,121 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Arjun Kumar — Promotion Gallery</title>
+  <meta name="description" content="A gallery and motivational message celebrating the promotion of Arjun Kumar." />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container nav">
+      <div class="logo">Arjun <span>AK</span> Kumar</div>
+      <nav aria-label="Primary">
+        <a href="#about">About</a>
+        <a href="#gallery">Gallery</a>
+        <a href="#message">Message</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="container hero-grid">
+        <div>
+          <p class="eyebrow">Celebrating a Promotion</p>
+          <h1>Congratulations, <em>Arjun Kumar</em></h1>
+          <p class="hero-copy">A collection of moments and a short message to inspire continued growth — for Arjun, on this milestone promotion. Scroll down to view the gallery of 50+ photos and read a motivational note written for this occasion.</p>
+          <div class="hero-actions">
+            <a class="btn primary" href="#gallery">View Gallery</a>
+            <a class="btn secondary" href="#message">Read Message</a>
+          </div>
+        </div>
+        <div class="hero-art" aria-hidden="true">
+          <!-- Decorative illustration placeholder -->
+          <div class="floating-card one">⭐</div>
+          <div class="floating-card two">🎉</div>
+        </div>
+      </div>
+    </section>
+
+    <section id="about" class="section container">
+      <div class="section-head">
+        <h2>About Arjun</h2>
+        <div class="count">50+ photos</div>
+      </div>
+      <p>Arjun Kumar is a dedicated professional whose dedication, leadership, and consistent performance have led to this well-deserved promotion. This site gathers photos from milestones, events, and moments that tell a story of hard work and impact.</p>
+    </section>
+
+    <section id="gallery" class="section container">
+      <div class="section-head">
+        <h2>Photo Gallery</h2>
+        <div class="category-pills">Gallery · Promotion · Celebration</div>
+      </div>
+
+      <div class="toolbar">
+        <div class="search" role="search">
+          <span aria-hidden="true">🔎</span>
+          <input id="searchInput" placeholder="Filter by caption (optional)" />
+        </div>
+      </div>
+
+      <div class="product-grid" id="galleryGrid" aria-live="polite">
+        <!-- Images injected by script -->
+      </div>
+
+      <button class="load-more" id="loadMore">Load all 60 photos</button>
+    </section>
+
+    <section id="message" class="section container promo">
+      <div class="promo-box">
+        <div>
+          <p class="eyebrow">A Message</p>
+          <h2>For Arjun — On Your Promotion</h2>
+          <p>Stand tall. This promotion is not just a title — it is proof of late nights, steady learning, and the courage to carry responsibility. Remember: leadership begins with service, and excellence is a habit, not an act. Keep asking questions, keep listening, and keep bringing others forward with you. The journey ahead will ask more, but you'll be ready because you've already built the strength within.</p>
+        </div>
+        <div>
+          <p><strong>Short Speech — Motivational (for a team meeting):</strong></p>
+          <p>"Today, we celebrate not just a promotion, but a promise — a promise that dedication meets opportunity. Arjun has shown resilience, creativity, and a readiness to step up. Let this promotion remind us all that hard work opens doors, humility wins teams, and integrity shapes leaders. Congratulations, Arjun. We believe in your next chapter."</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="section container contact-grid">
+      <div>
+        <h2>Contact</h2>
+        <p>If you'd like to send congratulations or collaborate with Arjun, connect via social links.</p>
+        <p>
+          <a href="#" aria-label="Arjun on LinkedIn">LinkedIn</a> ·
+          <a href="#" aria-label="Arjun on Twitter">Twitter</a> ·
+          <a href="#" aria-label="Email Arjun">Email</a>
+        </p>
+      </div>
+      <form action="#" aria-label="Send congratulations">
+        <input type="text" name="name" placeholder="Your name" required />
+        <input type="email" name="email" placeholder="Your email" required />
+        <textarea name="message" rows="4" placeholder="Your message"></textarea>
+        <button class="primary" type="submit">Send</button>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container footer-inner">
+      <div>© <span id="year"></span> Arjun Kumar — Celebrating a Promotion</div>
+      <div>Built with ❤️ by Hariom Kumar Ojha</div>
+    </div>
+  </footer>
+
+  <!-- Image modal -->
+  <div id="lightbox" class="lightbox" role="dialog" aria-modal="true" aria-hidden="true">
+    <button id="closeLb" class="lb-close" aria-label="Close">×</button>
+    <img id="lbImg" alt="" />
+    <p id="lbCaption"></p>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
